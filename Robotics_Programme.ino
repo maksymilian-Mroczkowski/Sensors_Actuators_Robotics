@@ -66,7 +66,7 @@ to implement error and may have made it harder to figure out in what position th
 if all of the sudden the magnet was on but we thought it was of, this could have delayed us or introduced error during the competition.
 
 
-Our code relies on 3 segments.
+Our code is comprised of 3 segments.
 
 Initialization:
 
