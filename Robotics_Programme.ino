@@ -55,3 +55,45 @@ void loop() {
   val3 = map(val3, 0, 1023, 0, 180);
   myservo3.write(val3);
 }
+
+
+/*
+
+some specific advantages of our code include:
+•we specifically chose to map a range of values from 0 to 180 to limit the movement of the servo, a movement of 360 degrees could have proven 
+to implement error and may have made it harder to figure out in what position the servo was at any given momemnt during the competition 
+•we also wanted to print the state of the button onto the terminal so we always knew whether the magnet was on or off during the competition.
+if all of the sudden the magnet was on but we thought it was of, this could have delayed us or introduced error during the competition.
+
+
+Our code relies on 3 segments.
+
+Initialization:
+
+Three Servo objects (myservo, myservo2, myservo3) are created to control three different servos.
+Three potentiometers are connected to analog pins A0, A1, and A2.
+A button is connected to digital pin 6 to toggle the state of the electromagnet.
+An electromagnet is controlled via digital pin 7.
+Variables are defined to store the state of the potentiometers (val, val2, val3), button (button_input), and electromagnet (EM_output and EM_POWER).
+Setup Function:
+
+Attach the servos to digital pins 8, 4, and 3.
+Set the pin modes for the servo pins, button input, and electromagnet output.
+Loop Function:
+
+The state of the button is read. If the button is pressed, it toggles the EM_POWER boolean variable and updates the electromagnet state accordingly.
+The values from the potentiometers are read and mapped from the range [0, 1023] to [0, 180] degrees.
+The mapped values are then written to the corresponding servos, causing them to rotate to the position based on the potentiometer readings.
+
+Setup Function:
+
+Attach the servos to digital pins 8, 4, and 3.
+Set the pin modes for the servo pins, button input, and electromagnet output.
+
+Loop Function:
+
+The state of the button is read. If the button is pressed, it toggles the EM_POWER boolean variable and updates the electromagnet state accordingly.
+The values from the potentiometers are read and mapped from the range [0, 1023] to [0, 180] degrees.
+The mapped values are then written to the corresponding servos, causing them to rotate to the position based on the potentiometer readings.
+
+*/
