@@ -60,10 +60,11 @@ void loop() {
 /*
 
 some specific advantages of our code include:
-•we specifically chose to map a range of values from 0 to 180 to limit the movement of the servo, a movement of 360 degrees could have proven 
-to implement error and may have made it harder to figure out in what position the servo was at any given momemnt during the competition 
+•we specifically chose to map a range of values from 0 to 180 to limit the movement of the servo, a movement of 270 degrees could have proven 
+to implement error and may have made it harder to figure out in what position the servo was at any given moment during the competition 
 •we also wanted to print the state of the button onto the terminal so we always knew whether the magnet was on or off during the competition.
 if all of the sudden the magnet was on but we thought it was of, this could have delayed us or introduced error during the competition.
+•button for magnet, potentiometers for the serovs.
 
 
 Our code is comprised of 3 segments.
